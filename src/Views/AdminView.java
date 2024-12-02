@@ -3,6 +3,9 @@ package Views;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import Objects.Movie;
+import Objects.ShareMemory;
+
 public class AdminView {
     public static void show() {
         Scanner scanner = new Scanner(System.in);
@@ -15,18 +18,18 @@ public class AdminView {
             System.out.println("Bienvenido admin");
             System.out.println("");
             System.out.println("Escribe la pelicula que deseas agregar");
+            String name = scanner.nextLine();
+            System.out.println("ingrese la duracion de la pelicula en minutos");
+            int time = scanner.nextInt();
+            Movie movie = new Movie(name, time);
+            ShareMemory.addMovie(movie);
 
-
-           
+            ShareMemory.printAllMovies();
             
          }else{
             System.out.println("usuario o contraseña incorrectas");
           
         }
-    
-        
-
-
-
+      
     }
 }
