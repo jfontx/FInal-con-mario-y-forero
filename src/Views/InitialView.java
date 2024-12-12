@@ -24,7 +24,6 @@ public class InitialView {
             System.out.println("");
             System.out.println("Hola Cliente");
             System.out.println("");
-            System.out.println("Selecciona el numero de la pelicula que deseas ver");
             CarteleraView.show();
 
                 break;

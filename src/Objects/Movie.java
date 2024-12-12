@@ -1,7 +1,7 @@
 package Objects;
 
 public class Movie {
-    String name;
+   public String name;
     int duracion;
 
     public Movie(String name, int duracion){
